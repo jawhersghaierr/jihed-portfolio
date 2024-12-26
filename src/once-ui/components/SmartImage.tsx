@@ -28,7 +28,8 @@ const SmartImage: React.FC<SmartImageProps> = ({
     radius,
     alt = '',
     isLoading = false,
-
+    objectFit,
+    
     enlarge = false,
     src,
     unoptimized = false,
