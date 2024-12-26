@@ -33,12 +33,13 @@ import {
 	FaDiscord,
 	FaGithub,
 	FaLinkedin,
-	FaXTwitter
+	FaXTwitter,
+	FaInstagram
 } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
 	chevronUp: HiChevronUp,
-    chevronDown: HiChevronDown,
+	chevronDown: HiChevronDown,
 	chevronRight: HiChevronRight,
 	chevronLeft: HiChevronLeft,
 	refresh: HiOutlineArrowPath,
@@ -63,5 +64,6 @@ export const iconLibrary: Record<string, IconType> = {
 	github: FaGithub,
 	linkedin: FaLinkedin,
 	x: FaXTwitter,
-	clipboard: HiClipboard
+	clipboard: HiClipboard,
+	instagram: FaInstagram
 };

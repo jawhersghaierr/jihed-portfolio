@@ -31,7 +31,7 @@ export const Footer = () => {
                     </Text>
                     <Text onBackground="neutral-weak">
                         {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-                        / Build your portfolio with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://once-ui.com/templates/magic-portfolio">Once UI</SmartLink>
+                        / All rights reserved.
                     </Text>
                 </Text>
                 <Flex
@@ -44,7 +44,7 @@ export const Footer = () => {
                                 icon={item.icon}
                                 tooltip={item.name}
                                 size="s"
-                                variant="ghost"/>
+                                variant="ghost" />
                         )
                     ))}
                 </Flex>

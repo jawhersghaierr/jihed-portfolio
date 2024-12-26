@@ -28,7 +28,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
     radius,
     alt = '',
     isLoading = false,
-    objectFit = 'cover',
+    objectFit = '',
     enlarge = false,
     src,
     unoptimized = false,
@@ -82,8 +82,8 @@ const SmartImage: React.FC<SmartImageProps> = ({
 
     const getYouTubeEmbedUrl = (url: string) => {
         const match = url.match(/(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-        return match 
-            ? `https://www.youtube.com/embed/${match[1]}?controls=0&rel=0&modestbranding=1` 
+        return match
+            ? `https://www.youtube.com/embed/${match[1]}?controls=0&rel=0&modestbranding=1`
             : '';
     };
 
@@ -103,8 +103,8 @@ const SmartImage: React.FC<SmartImageProps> = ({
                     height: aspectRatio
                         ? undefined
                         : height
-                        ? `${height}rem`
-                        : '100%',
+                            ? `${height}rem`
+                            : '100%',
                     aspectRatio,
                     cursor: enlarge ? 'pointer' : 'default',
                     borderRadius: isEnlarged ? '0' : radius ? `var(--radius-${radius})` : undefined,
@@ -149,7 +149,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                         src={src}
                         alt={alt}
                         fill
-                        style={{ 
+                        style={{
                             objectFit: isEnlarged ? 'contain' : objectFit,
                         }}
                     />
@@ -187,7 +187,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                                 loop
                                 muted
                                 playsInline
-                                style={{ 
+                                style={{
                                     width: '90vw',
                                     height: 'auto',
                                     objectFit: 'contain',
