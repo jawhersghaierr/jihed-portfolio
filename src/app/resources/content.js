@@ -45,7 +45,7 @@ const home = {
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Oral Surgeon</>,
     subline: <>
-        I am Dr. Jihed Sghaier, an oral and maxillofacial surgeon based in Chittagong. Welcome to my professional portfolio, where I share my work, expertise, and dedication to patient care.
+        I am Dr. Jihed Sghaier, an oral and maxillofacial surgeon based in Tunisia. Welcome to my professional portfolio, where I share my work, expertise, and dedication to patient care.
     </>
 }
 
